@@ -3,14 +3,57 @@
     <head>
         <title>Advanced HTML Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /* Cascading Style Sheets
+            1. Selector
+            2. Declaration
+                a. Property
+                b. Value
+
+            */
+            body{ /*Selector:html tag */
+                color:#15aa71;
+                background-color:rgba(159, 207, 221, 0.637);
+            }
+            h1{
+                color:rgb(255, 0, 0);
+                text-align: center;
+            }
+            h3{
+                color:rgb(255, 0, 0);
+            }
+            #even{
+                color:antiquewhite;
+            }
+            #odd{
+                color:bisque;
+            }
+            #crap{
+                color:azure;
+            }
+            .numbered{
+                font-size: 20px;
+            }
+            ul{
+                background-color:rgb(164, 179, 192);
+                border-radius: 10px;
+                width:25%; /*% does the percentage of the screen*/
+                height:75px;
+                font-size: 1em; /*em adjusts the size based on the other font sizes. vw and vh adjust size based on the size of the screen.*/
+                border: dashed 5px rgb(255, 255, 255);
+            }
+            #seasons{
+                color:rgb(255, 0, 0);
+            }
+        </style>
     </head>
     <body>
         <h1>Advanced HTML Notes</h1>
         <h3>Lists:</h3>
-        <ol type="I"> <!--Creates a numbered list-->
-            <li>This is the first thing</li>
-            <li>This is the second thing</li>
-            <li>This is the third thing</li>
+        <ol type="I" class="numbered"> <!--Creates a numbered list-->
+            <li id="odd">This is the first thing</li>
+            <li id="even">This is the second thing</li>
+            <li id="crap">This is the third thing</li>
         </ol>
         <ul> <!--Creates a bulleted list-->
             <li>Apple</li>
@@ -19,10 +62,10 @@
             <li>Kiwi</li>
         </ul>
         <dl> <!--Detailed list-->
-            <dt>Fall</dt>
+            <dt id="seasons">Fall</dt>
             <dd>Halloween</dd>
             <dd>Thanksgiving</dd>
-            <dt>Winter</dt>
+            <dt id="seasons">Winter</dt>
             <dd>Christmas</dd>
             <dd>Hanukkah</dd>
             <dd>New Years</dd>
