@@ -5,24 +5,53 @@
     <head> <!--holds the needed info that the user doesn't see-->
         <title>Basic Starter</title>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
         <style>
             h1{
                 text-align: center;
                 color: rgb(255, 255, 0);
+                font-family: "Permanent Marker", cursive;
+                font-weight: 400;
+                font-style: normal;
             }
             h2{
                 color: rgb(255, 255, 0);
                 text-decoration: underline;
+                font-family: "Racing Sans One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
             h3{
                 color: rgb(255, 255, 0);
+                font-family: "Permanent Marker", cursive;
+                font-weight: 400;
+                font-style: normal;
             }
             body{
-                background-color: rgb(105, 9, 105);
+                background-color: rgba(99, 31, 99, 0.89);
             }
             #paragraph{
                 background-color: rgb(209, 204, 204);
                 border-radius: 4px;
+                padding:1%;
+            }
+            #image2{
+                margin-left: 40%;
+            }
+            #image1{
+                margin-left:45px;
+            }
+            #safety{
+                border-style: dotted;
+                border-color: rgb(255, 255, 0);
+            }
+            #image3{
+                margin-top: 10px;
             }
         </style>
     </head>
@@ -38,29 +67,27 @@
         </div>
         <div>
         <h3>Flow</h3>
-        <p id="paragraph">Flow is an extremeley helpful element in parkour. Flow allows you to be able to go from one trick to another without any staggers or stutters. In other words, as soon as you're done with one stunt, you're immediately setup for another right after.</p>
+        <p id="paragraph" class="fow">Flow is an extremeley helpful element in parkour. Flow allows you to be able to go from one trick to another without any staggers or stutters. In other words, as soon as you're done with one stunt, you're immediately setup for another right after.</p>
         <a href="https://parkour.com/" target="_blank">
-        <img src="https://media.istockphoto.com/id/1482993807/photo/man-doing-parkour-free-runner.jpg?s=612x612&w=0&k=20&c=CAv9ecvUR0qvSFjq075fH9QS0Gdr6Nsf38-2Orleg8s=" alt="Parkour" width="200px" height="250px"></a>
+        <img id="image1" src="https://media.istockphoto.com/id/1482993807/photo/man-doing-parkour-free-runner.jpg?s=612x612&w=0&k=20&c=CAv9ecvUR0qvSFjq075fH9QS0Gdr6Nsf38-2Orleg8s=" alt="Parkour" width="200px" height="250px"></a>
         <a href="https://parkour.com/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Parkour_fl2006.jpg?utm_source=en.wikibooks.org&utm_campaign=index&utm_content=original" alt="Parkour" width="200px" height="250px"></a>
+        <img id="image2" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Parkour_fl2006.jpg?utm_source=en.wikibooks.org&utm_campaign=index&utm_content=original" alt="Parkour" width="200px" height="250px"></a>
+        </div>
+        <div id="safety">
+            <h2>Safety</h2>
+            <p id="paragraph">A lot of people that I meet say that they're too scared to do parkour because they don't want to end up breaking their necks. It might surprise you to say that parkour is actually a lot safer than you think.</p>
+            <h3>Falling Safely</h3>
+            <p id="paragraph">Firstmost in learning parkour is to fall safely. What this means is taking procedures and practices to help you know how to bail or fail a trick without getting injured.</p>
+            <h3>Drills</h3>
+            <p id="paragraph">Drills are essential for both learning the skill, and being safe and comfortable while doing the stunt. How to do a drill is to practice each part of a stunt seperately and learn how to put them all together.</p>
+        </div>
+        <div id="image3">
+            <a href="https://parkour.com/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQs_heG4N5R33AAqroknZ9WcjdfDtP6m0wqUJTjVks92CVNAbYvW5WNk9&s=10" alt="parkour.com" width="25%"></a>
         </div>
         <div>
-        <h2>Safety</h2>
-        <p id="paragraph">A lot of people that I meet say that they're too scared to do parkour because they don't want to end up breaking their necks. It might surprise you to say that parkour is actually a lot safer than you think.</p>
-        </div>
-        <div>
-        <h3>Falling Safely</h3>
-        <p id="paragraph">Firstmost in learning parkour is to fall safely. What this means is taking procedures and practices to help you know how to bail or fail a trick without getting injured.</p>
-        </div>
-        <div>
-        <h3>Drills</h3>
-        <p id="paragraph">Drills are essential for both learning the skill, and being safe and comfortable while doing the stunt. How to do a drill is to practice each part of a stunt seperately and learn how to put them all together.</p>
-        <a href="https://parkour.com/" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQs_heG4N5R33AAqroknZ9WcjdfDtP6m0wqUJTjVks92CVNAbYvW5WNk9&s=10" alt="parkour.com" width="25%"></a>
-        </div>
-        <div>
-        <h2>Summary</h2>
-        <p id="paragraph">Parkour isn't just running around, flipping and vaulting to your hearts content. There's a lot of practice into it and key elements that help you be safer and flashier.</p>
+            <h2>Summary</h2>
+            <p id="paragraph">Parkour isn't just running around, flipping and vaulting to your hearts content. There's a lot of practice into it and key elements that help you be safer and flashier.</p>
         </div>
     </body>
 </html>
