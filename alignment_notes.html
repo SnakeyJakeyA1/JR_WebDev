@@ -30,10 +30,14 @@
             #showMore{
 
             }
+            #duck{
+                width:150px;
+            }
         </style>
     </head>
     <body>
         <h1>Alignment Notes</h1>
+        <img src="https://irp.cdn-website.com/2740280e/dms3rep/multi/opt/Auggie-2a12d0bb-640w.jpg" alt="duck" id="duck" onmouseout="changeImage()">
         <div id="box-wrapper">
             <div id="box" onmouseover="disappear()" onmouseout="appear()">
                 <p>Box 1</p>
@@ -68,6 +72,15 @@
             <button id="showMore" onClick="show()">Show More</button>
             <script>
                 //makes the webpage interactive
+                let images = ["https://irp.cdn-website.com/2740280e/dms3rep/multi/opt/Auggie-2a12d0bb-640w.jpg", "https://www.metzerfarms.com/images/products/jumbo-pekin-ducks/jumbo-main.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxRsMmFBgZHVt5sRdJIxdfrAeCogE_fLjLelO-iP_BDA&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqylkyC18q3jK1DKAF81nIXDG3IKlgzWZEFnM0eKDGoqi4ZXpYrNo3sLQ&s=10"]
+                let current = 0
+                function changeImage(){
+                    current += 1;
+                    if (current > 3){
+                        current = 0;
+                    }
+                    document.getElementById("duck").src = images[current]
+                }
                 function color(){
                     let newColor = document.getElementById("colorPicker").value
                     document.getElementById("box").style.backgroundColor = newColor
