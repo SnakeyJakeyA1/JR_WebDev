@@ -19,6 +19,10 @@
                 font-weight: 400;
                 font-style: normal;
             }
+            .first{
+                border-style: solid;
+                border-color: rgb(243, 186, 42);
+            }
             h2{
                 color: rgb(255, 255, 0);
                 text-decoration: underline;
@@ -40,11 +44,15 @@
                 border-radius: 4px;
                 padding:1%;
             }
-            #image2{
-                margin-left: 40%;
+            #techniques{
+                border-style:groove;
+                border-width: 10px;
+                border-color: rgb(238, 207, 129);
+                margin-top: 10px;
             }
-            #image1{
-                margin-left:45px;
+            #tech-images{
+                display: flex;
+                justify-content: space-around;
             }
             #safety{
                 border-style: dotted;
@@ -52,26 +60,29 @@
             }
             #image3{
                 margin-top: 10px;
+                display: flex;
+                justify-content: center;
             }
         </style>
     </head>
     <body> <!--The stuff the user sees-->
+        <img id="bgimage" src="https://tse4.mm.bing.net/th/id/OIP.t_KOG0pmg4DGGAwLv2gkAAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Parkour" width="100%">
         <h1>Parkour</h1> <!--Largest heading-->
-        <div id="paragraph">
+        <div id="paragraph" class="first">
         <p>Parkour is a sport that you don't often hear of a lot. A basic discription of Parkour would be getting from point A to point B as complex and stylish as possible using stunts and tricks to guide you there. There are many techniques with many different stunts that can allow you to get to point B as falshiest as possible. Here is a quick list of each of these techniques, and some examples.</p> <!--Smallest text-->
         </div>
-        <h2>Techniques</h2>
-        <div>
-        <h3>Flips</h3>
-        <p id="paragraph">We all know what flips are. Frontflips, backflips, sideflips, fulls, flyaways, all of these are different flips. They each can add not only flare to your stunts, but also can be good flow.</p>
+        <div id="techniques">
+            <h2>Techniques</h2>
+            <h3>Flips</h3>
+            <p id="paragraph">We all know what flips are. Frontflips, backflips, sideflips, fulls, flyaways, all of these are different flips. They each can add not only flare to your stunts, but also can be good flow.</p>
+            <h3>Flow</h3>
+            <p id="paragraph" class="fow">Flow is an extremeley helpful element in parkour. Flow allows you to be able to go from one trick to another without any staggers or stutters. In other words, as soon as you're done with one stunt, you're immediately setup for another right after.</p>
         </div>
-        <div>
-        <h3>Flow</h3>
-        <p id="paragraph" class="fow">Flow is an extremeley helpful element in parkour. Flow allows you to be able to go from one trick to another without any staggers or stutters. In other words, as soon as you're done with one stunt, you're immediately setup for another right after.</p>
-        <a href="https://parkour.com/" target="_blank">
-        <img id="image1" src="https://media.istockphoto.com/id/1482993807/photo/man-doing-parkour-free-runner.jpg?s=612x612&w=0&k=20&c=CAv9ecvUR0qvSFjq075fH9QS0Gdr6Nsf38-2Orleg8s=" alt="Parkour" width="200px" height="250px"></a>
-        <a href="https://parkour.com/" target="_blank">
-        <img id="image2" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Parkour_fl2006.jpg?utm_source=en.wikibooks.org&utm_campaign=index&utm_content=original" alt="Parkour" width="200px" height="250px"></a>
+        <div id="tech-images">
+            <a href="https://parkour.com/" target="_blank">
+            <img id="image1" src="https://media.istockphoto.com/id/1482993807/photo/man-doing-parkour-free-runner.jpg?s=612x612&w=0&k=20&c=CAv9ecvUR0qvSFjq075fH9QS0Gdr6Nsf38-2Orleg8s=" alt="Parkour" width="200px" height="250px"></a>
+            <a href="https://parkour.com/" target="_blank">
+            <img id="image2" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Parkour_fl2006.jpg?utm_source=en.wikibooks.org&utm_campaign=index&utm_content=original" alt="Parkour" width="200px" height="250px"></a>
         </div>
         <div id="safety">
             <h2>Safety</h2>
@@ -83,7 +94,7 @@
         </div>
         <div id="image3">
             <a href="https://parkour.com/" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQs_heG4N5R33AAqroknZ9WcjdfDtP6m0wqUJTjVks92CVNAbYvW5WNk9&s=10" alt="parkour.com" width="25%"></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQs_heG4N5R33AAqroknZ9WcjdfDtP6m0wqUJTjVks92CVNAbYvW5WNk9&s=10" alt="parkour.com" width="250px"></a>
         </div>
         <div>
             <h2>Summary</h2>
