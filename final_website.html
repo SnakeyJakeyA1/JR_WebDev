@@ -15,6 +15,20 @@
                 font-weight: bold;
                 
             }
+            p{
+                border-style: dashed;
+                border-width: 5px;
+                border-radius: 8px;
+                padding:10px;
+            }
+            ul{
+                border-style: dotted;
+                border-radius: 50px;
+                padding-left: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width:150px;
+            }
             body{
                 background-color:rgba(168, 97, 68, 0.678);
             }
@@ -31,6 +45,13 @@
                 color:rgba(172, 82, 50, 0.795);
                 font-weight: bold;
             }
+            #actimage{
+                display:flex;
+                justify-content: center;
+            }
+            #activity-images{
+                margin-top: 30px;
+            }
         </style>
     </head>
     <body>
@@ -42,7 +63,7 @@
         </div>
         <div class="rock-salt-regular">
         <h2>Info</h2>
-        <p>Located in Emery County Utah, Goblin Valley, a very popular and commonly visited National Park, is a valley of unnaturally formed sandstone in the shape of goblins. It is a beautiful desert that goes on for miles. At Goblin Valley, many activities can be participated in. Here is a list of fun activities that will get you interested.</p>
+        <p>Located in Emery County Utah, Goblin Valley, a very popular and commonly visited National Park, is a valley of unnaturally formed sandstone in the shape of goblins. It is a beautiful desert that goes on for miles. At Goblin Valley, many activities can be participated in. Here is a list of fun activities that might get you interested.</p>
         </div>
         <div id="activities" class="rock-salt-regular">
             <h3>Activities:</h3>
@@ -57,7 +78,21 @@
                 <li>Stargazing</li>
             </ul>
         </div>
-        <a href="https://www.liveawilderlife.com/things-to-do-at-goblin-valley-state-park/" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR423BVUBUgGlK3TMo0fKm2A9uBICNrFJFRkMQfkn_bbQ&s=10" alt="goblin valley" width="250px"></a>
+        <div id="activity-images">
+            <div id="actimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR423BVUBUgGlK3TMo0fKm2A9uBICNrFJFRkMQfkn_bbQ&s=10" alt="goblin valley" id="valley" width="250px" onmouseout="changeImage()">
+            </div>
+            <script>
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR423BVUBUgGlK3TMo0fKm2A9uBICNrFJFRkMQfkn_bbQ&s=10", "https://rentalphoenixaz.com/wp-content/uploads/2025/09/IMG_0718-scaled.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQioSuh2v9tJwlmoxf1EYpbHWqCQSiCFRY4LzleEVIbJDKm7lq5j1g-I&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69Udp53od4UlmJqt-GhOzxf354OOU63OgyohwSjN6NIC1tujKcX8k60b8&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAa0b-2eji1s-CFnbL0SwSj58aN8ucbz23tHMHoX0ta6NyZeqOPJY990w&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IETTiebMkylh3t3glutZGiKtMlN04dH7uCARVs6t4boufooSs7c7AXSQ&s=10"]
+                let current = 0
+                function changeImage(){
+                    current += 1;
+                    if (current > 5){
+                        current = 0;
+                    }
+                    document.getElementById("valley").src = images[current]
+                }
+            </script>
+        </div>
     </body>
 </html>
