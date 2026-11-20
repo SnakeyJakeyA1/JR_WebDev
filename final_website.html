@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
         <style>
-            h1, h2, p{
+            h1, h2, h3, p, button{
                 text-align:center;
                 color:rgba(172, 82, 50, 0.795);
                 font-weight: bold;
@@ -45,12 +45,20 @@
                 color:rgba(172, 82, 50, 0.795);
                 font-weight: bold;
             }
+            #minfo{
+                color:rgba(172, 82, 50, 0.795);
+                font-weight: bold;
+            }
             #actimage{
                 display:flex;
                 justify-content: center;
             }
             #activity-images{
                 margin-top: 30px;
+            }
+            #actinfo{
+                display:flex;
+                justify-content: space-evenly;
             }
         </style>
     </head>
@@ -65,18 +73,28 @@
         <h2>Info</h2>
         <p>Located in Emery County Utah, Goblin Valley, a very popular and commonly visited National Park, is a valley of unnaturally formed sandstone in the shape of goblins. It is a beautiful desert that goes on for miles. At Goblin Valley, many activities can be participated in. Here is a list of fun activities that might get you interested.</p>
         </div>
-        <div id="activities" class="rock-salt-regular">
-            <h3>Activities:</h3>
-            <ul>
-                <li>Camping</li>
-                <li>Hiking</li>
-                <li>Biking</li>
-                <li>Backpacking</li>
-                <li>Canyoneering</li>
-                <li>Disc-Golf</li>
-                <li>OHV</li>
-                <li>Stargazing</li>
-            </ul>
+        <div id="actinfo">
+            <div id="activities" class="rock-salt-regular">
+                <h3>Activities:</h3>
+                <ul>
+                    <li>Camping</li>
+                    <li>Hiking</li>
+                    <li>Biking</li>
+                    <li>Backpacking</li>
+                    <li>Canyoneering</li>
+                    <li>Disc-Golf</li>
+                    <li>OHV</li>
+                    <li>Stargazing</li>
+                </ul>
+            </div>
+            <div id="minfo" class="rock-salt-regular">
+                <button id="moreInfo" onClick="more()" class="rock-salt-regular" >More info:</button>
+                <ul>
+                    <li>Vacation times</li>
+                    <li>Temperatures</li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div id="activity-images">
             <div id="actimage">
@@ -91,6 +109,16 @@
                         current = 0;
                     }
                     document.getElementById("valley").src = images[current]
+                }
+                function more(){
+                    let element = document.getElementById("flex-wrapper")
+                    if (element.style.display == "flex"){
+                        element.style.display = "none"
+                        document.getElementById("moreInfo").innerHTML = "show More"
+                    }else{
+                        element.style.display = "flex"
+                        document.getElementById("moreInfo").innerHTML = "Show Less"
+                    }
                 }
             </script>
         </div>
